@@ -6,6 +6,9 @@ val <- sample.int(750, size = 2e5, replace = T)
 #' @param values int
 #' @export
 make_dict <- function(keys, values){
+  if(!is.na(Sys.getenv("RSTUDIO", unset = NA)) && .rs.api.versionInfo()$version < "2021.9.1.372")){
+    warning("For RStudio version < 2021 make_dict returns, but throws protection error")
+  }
   require(rlang)
   e <- new.env(size = length(keys))
   l <- list2(!!!setNames(values, keys))
