@@ -1,11 +1,11 @@
 Package: minimal
 Type: Package
-Title: Large environment - RStudio protect() protection stack overflow error
+Title: user input - ASCII vs non-Ascii code
 Version: 1.0
 Date: 2021-11-21
 Author: Your Name
 Maintainer: Your Name <your@email.com>
-Description: reprex to reproduce RStudio protect() protection stack overflow error
+Description: reprex to reproduce package-related errors.
 License: GPL (>= 2)
 Encoding: UTF-8
 RoxygenNote: 7.1.2
