@@ -10,7 +10,10 @@ License: GPL (>= 2)
 Encoding: UTF-8
 RoxygenNote: 7.1.2
 Imports: 
-    rlang,
-    stringi
+    memoise,
+    rlang
 URL: https://github.com/D-Se/minimal
 BugReports: https://github.com/D-Se/minimal/issues
+LazyData: true
+Depends: 
+    R (>= 2.10)
